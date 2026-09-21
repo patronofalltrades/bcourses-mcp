@@ -1,0 +1,21 @@
+node_modules/
+dist/
+.DS_Store
+npm-debug.log*
+
+# The Canvas token lives in the macOS Keychain and must never reach a file.
+.env
+*.token
+token*.txt
+
+# Course material is copyrighted instructor content and often large.
+*.pdf
+*.pptx
+*.docx
+*.xlsx
+Classes/
+materials/
+
+# Personal schedule exports record your physical whereabouts.
+*.ics
+exports/

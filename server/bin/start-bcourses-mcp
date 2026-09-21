@@ -1,0 +1,14 @@
+#!/bin/zsh
+set -euo pipefail
+
+script_dir=${0:A:h}
+project_dir=${script_dir:h}
+account_name=${USER:-$(/usr/bin/id -un)}
+
+export PATH="$HOME/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin"
+export BCOURSES_ACCESS_TOKEN=$(/usr/bin/security find-generic-password \
+  -a "$account_name" \
+  -s "bcourses-student-mcp" \
+  -w)
+
+exec /usr/bin/env node "$project_dir/dist/src/stdio.js"
