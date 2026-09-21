@@ -105,7 +105,7 @@ Set `BCOURSES_BASE_URL` to your institution's Canvas origin. The tools are plain
 
 ## Skills
 
-`skills/` holds four skills that turn the raw tools into the things you actually ask for. Copy the ones you want into your Claude skills directory, or point Claude at the folder.
+`skills/` holds four skills that turn the raw tools into the things you actually ask for. Installation and how to adapt them: [skills/README.md](skills/README.md).
 
 | Skill | What it does |
 | --- | --- |
